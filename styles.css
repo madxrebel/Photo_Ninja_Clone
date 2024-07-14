@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.container {
+    padding: 0 15%;
+}
+
+header {
+    background: url(images/man.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+    position: relative;
+}
+
+.nav-wrapper {
+    line-height: 70px;
+    height: 70px;
+    border-bottom: 1px solid #000;
+}
+
+.nav-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-wrapper .brand {
+    font-size: 2.1rem;
+}
+
+.nav-wrapper ul {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.nav-wrapper #btn-login {
+    width: 70px;
+    height: 40px;
+}
+
+.nav-wrapper #btn-login:hover {
+    background-color: rgb(53, 45, 45);
+}
+
+/* intro section */
+.intro-hero {
+    /* position: relative; */
+    bottom:  1%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.intro-hero .contact-form {
+    display: inline-block;
+    text-align: left;
+    background-color: rgba(0,54,144,.3);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.intro-hero h1 {
+    font-size: 60px;
+}
+
+.intro-hero p {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,.3);
+    padding: 5px;
+    margin-bottom: 10px; /* Add space below each input and textarea */
+}
+
+form #fullname:focus {
+    height: 40px;
+    font-size: large;
+}
+
+form #email:focus {
+    height: 40px;
+    font-size: large;
+}
+
+form #phone-number:focus {
+    height: 40px;
+    /* max-width: 324.2px; */
+    font-size: large;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: rgba(255,255,255,.3);
+}
+
+form textarea {
+    height: 90px;
+}
+
+form textarea:focus {
+    font-size: large;
+}
+
+.error {
+    margin-top: -10px; /* Adjust this value as needed to reduce the space between the input and error message */
+    /* margin-bottom: 10px; Ensure there is space below the error message */
+}
+
+/*        popup       */
+        
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+}
