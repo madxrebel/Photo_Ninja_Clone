@@ -20,5 +20,5 @@ The project is a assignment for my ZABTech (iTVE) - TTC HUB module 6.
 
 - Client-side validation
 - Validating text fields, email IDs
-- Popup a message on submitting contact fomm
+- Popup a message on submitting contact form
 <!-- - Counting characters in a field and restricting text field length -->
